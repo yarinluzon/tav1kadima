@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="bc24fc94-64d7-40ed-801c-72cfdccc8bd9.png" type="image/x-icon">
 
   <!-- גלילה חלקה -->
   <style>
@@ -63,7 +65,7 @@
 
     <ul class="navbar-menu">
       <li><a href="#hero">דף ראשי</a></li>
-      <li><a href="#extra-services">שירותים</a></li>
+      <li><a href="#extra-services">קורסים</a></li>
       <li><a href="#contact">צור קשר</a></li>
     </ul>
   </nav>
@@ -78,36 +80,319 @@
       <span class="gradient-text">קחו את הנגינה שלכם צעד אחד קדימה</span>
     </h1>
     <div class="hero-buttons">
-      <a href="#extra-services" class="btn">השירותים שלנו <span class="arrow">⬇</span></a>
+      <a href="#extra-services" class="btn">הקורסים שלנו <span class="arrow">⬇</span></a>
       <a href="#contact" class="btn btn-contact-hero">צור קשר</a>
     </div>
   </section>
 
-  <!-- Extra Services Section -->
 <section id="extra-services" class="extra-services-section">
   <div class="extra-services-container">
-    <h2>השירותים שלנו</h2>
+    <h2>הקורסים שלנו</h2>
     <div class="extra-services-grid">
+
       <div class="extra-service-card">
-        <div class="icon">🎹</div>
-        <h3>תורת המוזיקה</h3>
-        <p>העמקת הבנת תורת המוזיקה, עבודה עם תווים, הרמוניה וקצב. בקבוצות של עד עשרה תלמידים</p>
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="icon">🎵</div>
+            <h3>שיעורים פרטניים מותאמים</h3>
+            <p>ליווי אישי עם מורה מנוסה לכלי המועדף עליכם או לז'אנר המוזיקלי הרצוי.</p>
+            <button class="info-btn">מידע נוסף</button>
+          </div>
+          <div class="card-back">
+            <h3>שיעורים פרטניים מותאמים</h3>
+            <p>קורס ייחודי שבו כל תלמיד בוחר את הדרך המוזיקלית שלו — כלי, סגנון, רפרטואר והתקדמות אישית.</p>
+            <button class="back-btn">חזור</button>
+          </div>
+        </div>
       </div>
 
       <div class="extra-service-card">
-        <div class="icon">🎸</div>
-        <h3>תורת המוזיקה פרטני</h3>
-        <p>העמקת הידע בתורת המוזיקה עם ליווי פרטני של מורה מקצועי</p>
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="icon">🎸</div>
+            <h3>תורת המוזיקה פרטני</h3>
+            <p>העמקת הידע בתורת המוזיקה עם ליווי פרטני של מורה מקצועי.</p>
+            <button class="info-btn">מידע נוסף</button>
+          </div>
+          <div class="card-back">
+            <h3>תורת המוזיקה פרטני</h3>
+            <p>שיעורים מותאמים אישית בקצב שלך עם מורה מנוסה, הכוללים ניתוח שירים, אקורדים והבנת סגנונות שונים.</p>
+            <button class="back-btn">חזור</button>
+          </div>
+        </div>
       </div>
 
-      <div class="extra-service-card">
-        <div class="icon">🎵</div>
-        <h3>שיעורים פרטניים מותאמים</h3>
-        <p>ליווי אישי עם מורה מנוסה לכלי המועדף עליכם או לז'אנר המוזיקלי הרצוי.</p>
-      </div>
+<div class="extra-service-card">
+  <div class="card-inner">
+    <div class="card-front">
+      <div class="icon">🎹</div>
+      <h3>תורת המוזיקה</h3>
+      <p>לימוד יסודות התווים, קצב והרמוניה בקבוצות קטנות של עד עשרה תלמידים.</p>
+      <br>
+      <button class="info-btn">מידע נוסף</button>
+    </div>
+
+    <div class="card-back">
+      <h3>תורת המוזיקה</h3>
+      <p>נלמד את יסודות התווים, סולמות ואקורדים בשילוב תרגול והאזנה חווייתית.</p>
+      <button class="back-btn">חזור</button>
     </div>
   </div>
+</div>
+
+  </div>
 </section>
+
+<style>
+/* ------------------------------------ */
+/* Section Background & Layout */
+/* ------------------------------------ */
+.extra-services-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #44ccb8 0%, #469ff0 50%, #8c5de4 100%);
+    color: white;
+}
+
+.extra-services-container h2 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.extra-services-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------------ */
+/* Card Structure & Flip Effect */
+/* ------------------------------------ */
+.extra-service-card {
+    perspective: 1000px;
+    width: 300px;
+    height: 420px; /* גובה אחיד לכל הכרטיסים */
+    margin: 15px 0;
+    display: flex;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+}
+
+.extra-service-card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* צד קדמי ואחורי */
+.card-front,
+.card-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(80, 150, 255, 0.85), rgba(50, 100, 200, 0.75));
+    backdrop-filter: blur(10px);
+    color: white;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* מוודא שכל הטקסט באמצע והכפתור תמיד בתחתית */
+.card-content {
+    flex-grow: 1; /* גורם לתוכן להימתח */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* פיזור: טקסט למעלה, כפתור למטה */
+    align-items: center;
+    width: 100%;
+}
+
+/* טקסט */
+.card-front p,
+.card-back p {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+/* כפתורים */
+.info-btn,
+.back-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    padding: 10px 24px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    min-height: 42px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* תמיד דוחף את הכפתור למטה */
+}
+
+/* Hover effect */
+.info-btn:hover,
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* ------------------------------------ */
+/* Text & Icons */
+/* ------------------------------------ */
+.icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+.card-front h3,
+.card-back h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card-front p,
+.card-back p {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 120px; /* אחידות בגובה התוכן */
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+/* ------------------------------------ */
+/* Buttons – Symmetry and Style */
+/* ------------------------------------ */
+.info-btn,
+.back-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    padding: 10px 24px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    min-height: 42px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 10px; /* מוסיף ריווח אחיד מלמטה */
+}
+
+/* Hover */
+.info-btn:hover,
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* מסתיר את כפתור 'חזור' כשהכרטיס לא הפוך */
+.extra-service-card:not(.flipped) .card-back .back-btn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* מציג את כפתור 'חזור' כשהכרטיס כן הפוך */
+.extra-service-card.flipped .card-back .back-btn {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+/* אחידות בין גבהי הטקסטים */
+.card-front p,
+.card-back p {
+    min-height: 90px; /* גובה זהה לטקסט */
+    max-width: 240px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* לוודא שהכפתור תמיד בתחתית באותו מקום */
+.card-front,
+.card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+</style>
+
+
+
+<script>
+document.querySelectorAll('.info-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.extra-service-card').classList.add('flipped');
+  });
+});
+
+document.querySelectorAll('.back-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.extra-service-card').classList.remove('flipped');
+  });
+});
+</script>
+
+<script>
+document.querySelectorAll('.info-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.extra-service-card').classList.add('flipped');
+  });
+});
+
+document.querySelectorAll('.back-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.extra-service-card').classList.remove('flipped');
+  });
+});
+</script>
+
 
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
@@ -140,6 +425,74 @@
       </div>
     </div>
   </section>
+
+<div class="social-icons">
+    <a href="קישור לפייסבוק" target="_blank" aria-label="פייסבוק" class="facebook-icon">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="קישור לוואטסאפ" target="_blank" aria-label="וואטסאפ" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/tav1kadima/" target="_blank" aria-label="אינסטגרם" class="instagram-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+
+<style>
+/* -------------------- הגדרות כלליות -------------------- */
+.social-icons {
+    margin-top: 30px; 
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 36px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* הגדלה קלה בריחוף */
+}
+
+/* -------------------- 1. וואטסאפ: ירוק רשמי (צבע אחיד) -------------------- */
+/* וואטסאפ מופיע לרוב כירוק אחיד, לכן נשאיר אותו כצבע רגיל */
+.whatsapp-icon {
+    color: #25D366; /* ירוק וואטסאפ */
+}
+.whatsapp-icon:hover {
+    color: #128C7E; /* ירוק כהה יותר בריחוף */
+}
+
+/* -------------------- 2. פייסבוק: גרדיאנט דמוי-מלא -------------------- */
+.facebook-icon i {
+    /* גרדיאנט כחול עדין כדי לתת מראה מלא יותר */
+    background: linear-gradient(135deg, #1877F2 0%, #0d4a99 100%);
+    
+    /* טכניקה לצביעת האייקון בצבע הרקע (הגרדיאנט) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+/* הסרת ה-hover color כדי שהגרדיאנט יישאר */
+.facebook-icon:hover {
+    transform: scale(1.1); 
+}
+
+/* -------------------- 3. אינסטגרם: גרדיאנט מלא -------------------- */
+.instagram-icon i {
+    /* גרדיאנט מלא של אינסטגרם */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    
+    /* טכניקה לצביעת האייקון בצבע הרקע (הגרדיאנט) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+</style>
 
 <!-- Notification -->
 <div id="notification" class="notification">
